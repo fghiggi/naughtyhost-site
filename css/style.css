@@ -1,0 +1,125 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+ul li{
+  display: inline;
+}
+
+.naughty {
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 100;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 100;
+  
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 60px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo-font {
+  font-size: 100px;
+}
+
+.nav-color {
+  background-color: #243447 !important;
+}
+
+body {
+  background-color: #2C4158 !important;
+  color: white;
+}
+
+.page-footer {
+  background-color: #1B2836 !important;
+}
+
+.highlight {
+  background-color: #688fb7 !important;
+}
+
+.ancor{
+   position: relative;
+   border-top: 45px solid transparent;
+   margin: -45px 0 0;
+   -webkit-background-clip: padding-box;
+   -moz-background-clip: padding;
+   background-clip: padding-box;
+}
+
+.ancor:before {
+   content: "";
+   position: absolute;
+   top: -2px;
+   left: 0;
+   right: 0;
+}
