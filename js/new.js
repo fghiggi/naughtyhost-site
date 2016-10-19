@@ -1,7 +1,6 @@
 $("#contratar").submit(function(e) {
-
     var url = "https://naughtyhost-slave00.c9users.io/clientes"; // the script where you handle the form input.
-    console.log($("#contratar").serialize());
+    
     $.ajax({
            type: "POST",
            url: url,
@@ -13,4 +12,14 @@ $("#contratar").submit(function(e) {
          });
 
     e.preventDefault(); // avoid to execute the actual submit of the form.
+});
+
+$(document).keydown(function(e) {
+    if (e.keyCode == 90 && e.ctrlKey) {
+        $('#escondido').css('display', 'inline-block');
+    }
+    
+    if (e.keyCode == 88 && e.ctrlKey) {
+        $('#escondido').css('display', 'none');
+    }
 });
