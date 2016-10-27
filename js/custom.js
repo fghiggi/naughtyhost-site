@@ -22,7 +22,7 @@ $(document).ready(function() {
             url: url,
             data: $("#frm_contratar").serialize(),
             success: function(data) {
-                Materialize.toast('Contratado com sucesso!', 4000)
+                Materialize.toast(data.message, 4000)
                 document.getElementById('frm_contratar').reset();
             }
         });
@@ -39,8 +39,10 @@ $(document).ready(function() {
             url: url,
             data: {"uuid": uuid},
             success: function(data) {
-                alert(data.message);
-                location.reload();
+                Materialize.toast(data.message, 3000)
+                setTimeout(function() {
+                     location.reload();
+                  }, 3000);
             }
         });
 
