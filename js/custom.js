@@ -22,7 +22,7 @@ $(document).ready(function() {
             url: url,
             data: $("#frm_contratar").serialize(),
             success: function(data) {
-                alert(data.message);
+                Materialize.toast('Contratado com sucesso!', 4000)
                 document.getElementById('frm_contratar').reset();
             }
         });
