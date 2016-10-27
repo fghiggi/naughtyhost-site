@@ -251,14 +251,14 @@
       <div class="section">
         <div class="row text-white">
           <h2 class="center">Contrate</h2>
-          <form id="contratar" class="col s12 m8 offset-m2">
+          <form id="frm_contratar" class="col s12 m8 offset-m2">
             <div class="row">
               <div class="input-field col s10">
-                <input name="dominio" id="last_name" type="text" class="validate">
+                <input name="dominio" id="dominio" type="text" class="validate" required>
                 <label for="last_name">Domínio</label>
               </div>
               <div class="input-field col s2">
-                <select>
+                <select id="domain" name="domain">
                   <option value=".com">.com</option>
                   <option value=".com.br">.com.br</option>
                   <option value=".tche">.tche</option>
@@ -267,7 +267,7 @@
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <select>
+                <select name="plano" id="plano">
                   <option value="planoum">Plano 1</option>
                   <option value="planodois">Plano 2</option>
                   <option value="planotres">Plano 3</option>
@@ -276,27 +276,27 @@
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input name="email" id="email" type="email" class="validate">
+                <input name="email" id="email" type="email" class="validate" required>
                 <label for="email">Email</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s6">
-                <input id="password" type="password" class="validate">
+                <input name="senhaRoot" id="senhaRoot" type="password" class="validate" required>
                 <label for="password">Senha ROOT</label>
               </div>
               <div class="input-field col s6">
-                <input id="password" type="password" class="validate">
+                <input name="senhaMysql" id="senhaMysql" type="password" class="validate" required>
                 <label for="password">Senha MySql</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s6">
-                <input id="password" type="password" class="validate">
+                <input name="senhaFtp" id="senhaFtp" type="password" class="validate" required>
                 <label for="password">Senha FTP</label>
               </div>
               <div class="input-field col s6">
-                <input id="password" type="password" class="validate">
+                <input name="senhaSenha" id="senhaSenha" type="password" class="validate" required>
                 <label for="password">Senha Senha</label>
               </div>
             </div>
@@ -391,7 +391,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  <script src="js/new.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
