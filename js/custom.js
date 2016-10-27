@@ -1,7 +1,6 @@
 $(document).ready(function() {
     
-    //var url = "http://localhost:8080/naughtyhost/clientes";
-    var url = "https://naughtyhost-slave00.c9users.io/clientes";
+    var url = "http://naughtyhost.com/api/clientes";
 
     function getData() {
         $.get(url, function(data) {
