@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    var url = "http://naughtyhost.com/api/clientes";
+    var url = "http://apinaughtyhost.com/clientes";
 
     function getData() {
         $.get(url, function(data) {
@@ -36,7 +36,7 @@ $(document).ready(function() {
         $.ajax({
             type: "PUT",
             url: url,
-            data: {"uuid": uuid},
+            data: {"uuid": uuid, "status": "1"},
             success: function(data) {
                 Materialize.toast(data.message, 3000)
                 setTimeout(function() {
