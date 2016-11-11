@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    var url = "http://apinaughtyhost.com/clientes";
+    var url = "http://naughtyhost.com/api/clientes";
 
     function getData() {
         $.get(url, function(data) {
